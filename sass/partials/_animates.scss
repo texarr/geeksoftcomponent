@@ -1,0 +1,37 @@
+@keyframes delBackgroundAnimationRed {
+  from {
+    background-color: inherit;
+  }to {
+    background-color: #f43b3b;
+  }
+}
+
+@keyframes delColorAnimation {
+  from {
+    color: #192532;
+  }to {
+    color: #ddd;
+  }
+}
+
+@keyframes containerBackgroundAnimation {
+  from {
+    background-color: inherit;
+  }to {
+    background-color: #405a74;
+  }
+}
+
+.backgroundAnimation-red {
+  animation-name: delBackgroundAnimationRed, delColorAnimation;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+  animation-fill-mode: forwards;
+}
+
+.members__table__content:hover {
+  animation-name: containerBackgroundAnimation;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+  animation-fill-mode: forwards;
+}

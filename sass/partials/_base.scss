@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+}
+
+.members {
+
+  &__background {
+
+    &-blue {
+      background-color: #22303f;
+    }
+  }
+
+  &__table {
+    padding: 100px 50px;
+    width: 80%;
+
+    &__header {
+      color: #7da4cd;
+
+      .col:last-of-type {
+        text-align: right;
+      }
+    }
+
+    &__line {
+      height: 5px;
+      background-color: #192532;
+      margin: 5px 0;
+
+      &-top {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      &-bottom {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+
+    &__content_container {
+      height: (6 * $rowheight) + ($rowheight/2);
+      background-color: #192532;
+      color: #ddd;
+      padding: 0 15px;
+      overflow-y: scroll;
+      overflow-x: hidden;
+
+      // not working with Edge, FF and Opera Mini
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .col:last-of-type {
+        text-align: right;
+      }
+    }
+
+    &__content {
+      height: $rowheight;
+      margin: 0 15px;
+      border-bottom: 2px solid #111d29;
+
+      .col {
+        line-height: $rowheight;
+      }
+
+      div[data-name="action"] {
+        cursor: pointer;
+
+        > span {
+          margin-right: 10px;
+          visibility: hidden;
+        }
+
+        .fa {
+          color: #f43b3b;
+        }
+      }
+    }
+  }
+}
