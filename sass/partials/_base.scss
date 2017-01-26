@@ -2,6 +2,12 @@ body {
   margin: 0;
 }
 
+.selected {
+  transform: translate(-30px, -2px);
+  background-color: #405a74;
+  box-shadow: 10px 10px 5px #111d29;
+}
+
 .members {
 
   &__background {

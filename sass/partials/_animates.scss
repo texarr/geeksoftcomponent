@@ -6,14 +6,6 @@
   }
 }
 
-@keyframes delColorAnimation {
-  from {
-    color: #192532;
-  }to {
-    color: #ddd;
-  }
-}
-
 @keyframes containerBackgroundAnimation {
   from {
     background-color: inherit;
@@ -23,7 +15,7 @@
 }
 
 .backgroundAnimation-red {
-  animation-name: delBackgroundAnimationRed, delColorAnimation;
+  animation-name: delBackgroundAnimationRed;
   animation-duration: 1s;
   -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
   animation-fill-mode: forwards;
