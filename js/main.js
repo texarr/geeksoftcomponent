@@ -2,6 +2,7 @@ $(document).ready(function() {
   var actionBtn = document.querySelectorAll('div[data-name="action"]');
   var defaultElement = document.querySelector('div[data-name="toclone"]');
 
+  // you need to add elements first
   addMember(defaultElement, 'Daniel Pietrucha', '31', 'torro');
   addMember(defaultElement, 'Grzegorz Brzęczyczykiewicz', '72', 'scorpion');
   addMember(defaultElement, 'Gregory Kupala', '31', 'scorpion');
@@ -11,6 +12,7 @@ $(document).ready(function() {
   addMember(defaultElement, 'My wife', '31', 'scorpion');
   addMember(defaultElement, 'Chuck Norris', '77', 'torro');
 
+  // then operate on them
   actionBtn = document.querySelectorAll('div[data-name="action"]');
   hoverAnimations(actionBtn);
   deleteConfirm(actionBtn);
