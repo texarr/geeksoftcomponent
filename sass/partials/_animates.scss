@@ -21,7 +21,7 @@
   animation-fill-mode: forwards;
 }
 
-.members__table__content:hover {
+.members__table__container__content:hover {
   animation-name: containerBackgroundAnimation;
   animation-duration: 1s;
   -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
